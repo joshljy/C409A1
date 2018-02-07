@@ -1,3 +1,5 @@
+package q1;
+
 import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
@@ -24,7 +26,7 @@ public class q1 {
             // arg 1 is count
             c = Integer.parseInt(args[1]);
             // arg 2 is a boolean
-            mulithreaded = Boolean.parseBoolean(args[2]);
+            multithreaded = Boolean.parseBoolean(args[2]);
 
             // create an image and initialize it to all 0's
             img = new BufferedImage(width,height,BufferedImage.TYPE_INT_ARGB);
@@ -35,7 +37,7 @@ public class q1 {
             }
 
             // YOU NEED TO ADD CODE HERE AT LEAST!
-
+            System.out.println("Done");
             // Write out the image
             File outputfile = new File("outputimage.png");
             ImageIO.write(img, "png", outputfile);
